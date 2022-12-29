@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Shortner </title>
+</head>
+<body>
+    
+    <!-- Form to accept links . -->
+    
+    <form method="post" enctype="application/x-www-form-urlencoded">
+        <input name="link" type="url" required>
+        <input name="link submit" type="submit">
+    </form>
+    
+    <!-- Returning the code for link -->
+    
+    <hr>
+    {% if code %}
+    <p>Your code is : {{code}} </p> 
+    <p>To visit the website go to /web/code </p>
+    {% endif %}
+
+</body>
+</html>
